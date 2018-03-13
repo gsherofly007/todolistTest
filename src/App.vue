@@ -52,15 +52,15 @@
 </template>
 
 <script>
-//  import ElRow from "element-ui/packages/row/src/row";
-//  import ElCol from "element-ui/packages/col/src/col";
+  import ElRow from "element-ui/packages/row/src/row";
+  import ElCol from "element-ui/packages/col/src/col";
 export default {
-//  components: {ElCol, ElRow},
+  components: {ElCol, ElRow},
   name: 'App',
-  data() {
+  data : function () {
     return {
       activeIndex: "1"
-    }
+    };
   }
     ,
   computed: {
@@ -71,9 +71,7 @@ export default {
     }
   },
   methods: {},
-  created() {
-    //console.log("created")
-  }
+  created() {}
 }
 </script>
 

@@ -5,7 +5,10 @@ import App from './App'
 import router from './router'
 
 import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
 import axios from 'axios'
+
 Vue.use(ElementUI)
 // 添加 Vue 实例方法，通过把它们添加到 Vue.prototype 上实现
 Vue.prototype.$axios = axios
@@ -13,9 +16,10 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+var vue = new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  components: { App }, //注册全局组件
+  template: '<App/>' //注册组件
 })
+
